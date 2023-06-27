@@ -8,7 +8,7 @@ POST {{baseUrl}}/login
 content-type: application/json
 
 {
-    "email": "Charline.Prevost@gmail.com",
+    "email": "Romeo.Renard89@yahoo.fr",
     "password": "secret"
 }
 
@@ -47,18 +47,18 @@ Authorization: Bearer
 ###
 
 # @name editUser
-PUT {{baseUrl}}/api/users/5
+PUT {{baseUrl}}/api/users/1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiQ2hhcmxpbmUuUHJldm9zdEBnbWFpbC5jb20iLCJpZCI6NX0sImlhdCI6MTY4Nzc4MDczMCwiZXhwIjoxNjg3ODM0NzMwfQ._XQPL8YCwAiTZcpkl8NmrQUTxbdfkQoPSDsfnlnOniw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiRmVsaXg4N0B5YWhvby5mciIsImlkIjoxfSwiaWF0IjoxNjg3ODQ5MjA1LCJleHAiOjE2ODc5MDMyMDV9.ybE2tVLGf6NCpOw7XwxpCucvnkJL_KRBO6Q0C5kEMxM
 
 {
   "name": "E",
   "firstname": "Haddock",
   "email": "Charline.Prevost@gmail.com",
-  "pseudo": "Boup",
-  "password": "secret",
+  "pseudo": "Bloup",
+  "password": "",
   "description": "Vieille louve de mer",
-  "availability": true,
+  "availability": false,
   "tags": [
     1,
     3,
@@ -92,13 +92,13 @@ Authorization: Bearer
 # @name createProject
 POST {{baseUrl}}/api/projects
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiQXVkZWxpbmUuQmxhbmNoYXJkNTdAZ21haWwuY29tIiwiaWQiOjJ9LCJpYXQiOjE2ODc3NzMyNjAsImV4cCI6MTY4NzgyNzI2MH0.ZAhIGfcJ3SvsqFwLulXkquNamcIJERt9cBNd2axxIDE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiUm9tZW8uUmVuYXJkODlAeWFob28uZnIiLCJpZCI6OTB9LCJpYXQiOjE2ODc4NTgwMDksImV4cCI6MTY4NzkxMjAwOX0.fUOGWL_U9tILciWjm3bJqEWawlSAuaYsomXLqW3wYV8
 
 {
-  "title": "Bisco98",
-  "availability": false,
-  "description": "Loremipsumblabla",
-  "user_id": 2,
+  "title": "Bloup",
+  "availability": true,
+  "description": "Lore mipsumb labla",
+  "user_id": 90,
   "tags": [
     2,
     3,
@@ -109,17 +109,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiO
 ###
 
 # @name editProject
-PUT {{baseUrl}}/api/projects/43
+PUT {{baseUrl}}/api/projects/5
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiQXVkZWxpbmUuQmxhbmNoYXJkNTdAZ21haWwuY29tIiwiaWQiOjJ9LCJpYXQiOjE2ODc3NzM4OTcsImV4cCI6MTY4NzgyNzg5N30.lLo17I7Ym1AW5BvzvEDaMEEyOaNeztQffC5x-1q381o
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlwIjoiOjpmZmZmOjEyNy4wLjAuMSIsImVtYWlsIjoiUm9tZW8uUmVuYXJkODlAeWFob28uZnIiLCJpZCI6OTB9LCJpYXQiOjE2ODc4NTgwMDksImV4cCI6MTY4NzkxMjAwOX0.fUOGWL_U9tILciWjm3bJqEWawlSAuaYsomXLqW3wYV8
 
 {
-  "title": "Bisco97",
+  "title": "Bisc",
   "availability": true,
-  "description": "Lorem ipsum blabla",
+  "description": "Loreum blabla",
   "user_id": 2,
   "tags": [
-    2,
+    3,
     6,
     4
   ]

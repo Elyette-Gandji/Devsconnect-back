@@ -104,8 +104,9 @@ const userController = {
   async editOneUser(req, res) {
     const userId = req.params.id;
     const { name, firstname, email, pseudo, password, description, availability, tags } = req.body;
+    console.log(req.body);
     const update = {name, firstname, email, pseudo, password, description, availability, tags};
-    console.log(update.password);
+    console.log(update);
 
     if (password === "") {
       delete update.password;

@@ -31,6 +31,7 @@ const projectController = {
     async editOneProject(req, res) {
       const projectId = req.params.id;
       const { title, description, availability, tags } = req.body;
+      console.log(req.body);
       const project = await projectMapper.updateOneProject(projectId, {title, description, availability, tags});
       console.log(project);
       res.json({status: 'success', data: project })

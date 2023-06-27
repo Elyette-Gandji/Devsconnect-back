@@ -1,6 +1,5 @@
 const client = require('./database');
 const userTagMapper = require('./userTagMapper');
-//const projectUserMapper = require('./projectUserMapper');
 const ApiError = require('../errors/apiError.js');
 
 const setRefreshToken = async(id, token) => {

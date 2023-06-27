@@ -4,8 +4,8 @@ const projectUserMapper = require('./projectUserMapper');
 const ApiError = require('../errors/apiError.js');
 
 const findAllProjects = async () => {
-  const results = await client.query(`
-  SELECT
+  const preparedQuery = {
+    text: `SELECT
     "project"."id",
     "project"."title",
     "project"."description",
@@ -32,7 +32,8 @@ const findAllProjects = async () => {
   FROM "project"
   GROUP BY
     "project"."id";
-  `);
+  `};
+  const results = await client.query(preparedQuery);
   return results.rows; 
 }
 
@@ -132,10 +133,7 @@ const updateOneProject = async (projectId, projectUpdate) => {
   }
 
   const UpdatedTags = projectUpdate.tags;
-  console.log(UpdatedTags);
-  console.log(currentProject.tags);
   const currentProjectTags = currentProject.tags ? currentProject.tags.map(tag => tag.tag_id) : [];
-  console.log(currentProject);
   
   // Id des tags au lieu des objets complets
   const tagsToDelete = currentProjectTags?.filter(tagId => !UpdatedTags?.includes(tagId)) || [];
