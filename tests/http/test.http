@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:3000
+@baseUrl = http://pmangeot-server.eddi.cloud/api-docs/
 @accessToken = {{login.response.body.$.data.accessToken}}
 @refreshToken = {{login.response.body.$.data.refreshToken}}
 

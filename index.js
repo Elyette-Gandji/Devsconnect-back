@@ -9,6 +9,6 @@ const server = http.createServer(app);
 
 server.listen(port, () => {
   debug(`API started on port ${port}`);
-  debug(`API Docs here : http://localhost:${port}/api-docs/`);
-  console.log(`API Docs here : http://localhost:${port}/api-docs/`);
+  debug(`API Docs here : http://pmangeot-server.eddi.cloud:80/api-docs/`);
+  console.log(`API Docs here : http://pmangeot-server.eddi.cloud:80/api-docs/`);
 });
